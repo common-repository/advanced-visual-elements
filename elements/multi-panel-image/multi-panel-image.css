@@ -1,0 +1,71 @@
+.adv-vis-ele-multi-panel-image {
+	margin: auto;
+}
+.multi-panel-image-c {
+	position: relative;
+	padding-top: 50%;
+}
+.multi-panel-image-block {
+	position: absolute;
+	height: 100%;
+	width: 30%;
+	perspective: 1000px;
+}
+.multi-panel-image-block:nth-child(1) {
+	height: 80%;
+	top: 10%;
+	left: 17%;
+	width: 15%;
+}
+.multi-panel-image-block:nth-child(2) {
+	top: 0;
+	left: 35%;
+}
+.multi-panel-image-block:nth-child(3) {
+	height: 80%;
+	top: 10%;
+	left: 64%;
+	width: 15%;
+}
+.multi-panel-image-side {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: auto 100%;
+	box-shadow: -1vw 0.5vw 1vw rgba(0, 0, 0, 0.3);
+}
+.multi-panel-image-side.multi-panel-image-main {
+	height: 100%;
+	width: 100%;
+	transform: rotateY(30deg);
+	transform-origin: 0 50%;
+}
+.multi-panel-image-side.multi-panel-image-left {
+	height: 100%;
+	width: 20%;
+	transform-origin: 0 50%;
+	transform: rotateY(-60deg) translateX(-100%);
+	filter: brightness(40%);
+}
+.multi-panel-image-block:nth-child(1) .multi-panel-image-main {
+	background-position: 4% 50%;
+	background-size: auto 130%;
+}
+.multi-panel-image-block:nth-child(1) .multi-panel-image-left {
+	background-position: 0 50%;
+	background-size: auto 130%;
+}
+.multi-panel-image-block:nth-child(2) .multi-panel-image-main {
+	background-position: 50% 0;
+}
+.multi-panel-image-block:nth-child(2) .multi-panel-image-left {
+	background-position: 28.5% 0;
+}
+.multi-panel-image-block:nth-child(3) .multi-panel-image-main {
+	background-position: 96% 50%;
+	background-size: auto 130%;
+}
+.multi-panel-image-block:nth-child(3) .multi-panel-image-left {
+	background-position: 78% 50%;
+	background-size: auto 130%;
+}

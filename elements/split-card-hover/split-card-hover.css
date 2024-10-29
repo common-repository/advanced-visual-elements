@@ -1,0 +1,113 @@
+.adv-vis-ele-split-card-hover-n {
+	position: relative;
+	overflow: hidden;
+	aspect-ratio: 9/12;
+	display: flex;
+	flex-direction: column;
+	border-radius: 7px;
+	box-shadow: rgba(255, 255, 255, 0.3) 0 5vw 6vw -8vw, rgba(255, 255, 255, 0) 0 4.5vw 5vw -6vw, rgba(50, 50, 80, 0.5) 0px 4vw 8vw -2vw, rgba(0, 0, 0, 0.8) 0px 4vw 5vw -3vw;
+	transition: box-shadow 1s cubic-bezier(0.66, 0.08, 0.19, 0.97);
+}
+.adv-vis-ele-split-card-hover-n > * {
+	z-index: 2;
+}
+.adv-vis-ele-split-card-hover-n > .adv-vis-ele-split-card-hover-i {
+	z-index: 0;
+	transition: all 0.8s cubic-bezier(0.66, 0.08, 0.19, 0.97);
+}
+.adv-vis-ele-split-card-hover-n::before,
+.adv-vis-ele-split-card-hover-n::after {
+	content: "";
+	width: 100%;
+	height: 50%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	transform-origin: left;
+	transform: scaleX(0);
+	transition: all 0.5s cubic-bezier(0.66, 0.08, 0.19, 0.97);
+	z-index: 1;
+}
+.adv-vis-ele-split-card-hover-n::after {
+	transition-delay: 0.15s;
+	top: 50%;
+}
+.adv-vis-ele-split-card-hover-n:hover,
+.adv-vis-ele-split-card-hover-n:focus {
+	box-shadow: white 0 5vw 6vw -9vw, #ffffff 0 5.5vw 5vw -7.5vw, rgba(50, 50, 80, 0.5) 0px 4vw 8vw -2vw, rgba(0, 0, 0, 0.8) 0px 4vw 5vw -3vw;
+}
+.adv-vis-ele-split-card-hover-n:hover::before,
+.adv-vis-ele-split-card-hover-n:hover::after,
+.adv-vis-ele-split-card-hover-n:focus::before,
+.adv-vis-ele-split-card-hover-n:focus::after {
+	transform: scaleX(1);
+}
+.adv-vis-ele-split-card-hover-n h3,
+.adv-vis-ele-split-card-hover-n p {
+	color: #ffffff;
+	opacity: 0;
+	text-align: left;
+}
+.adv-vis-ele-split-card-hover-n:hover h3,
+.adv-vis-ele-split-card-hover-n:hover p {
+	opacity: 1;
+}
+.adv-vis-ele-split-card-hover-n:hover h3 .char,
+.adv-vis-ele-split-card-hover-n:hover p .word,
+.adv-vis-ele-split-card-hover-n:focus h3 .char,
+.adv-vis-ele-split-card-hover-n:focus p .word {
+	opacity: 1;
+	transform: translateY(0);
+	color: inherit;
+}
+.adv-vis-ele-split-card-hover-n:hover h3 .char,
+.adv-vis-ele-split-card-hover-n:focus h3 .char {
+	transition-delay: calc(0.1s + var(--char-index) * 0.05s);
+}
+.adv-vis-ele-split-card-hover-n:hover p .word,
+.adv-vis-ele-split-card-hover-n:focus p .word {
+	transition-delay: calc(0.1s + var(--word-index) * 0.015s);
+}
+.adv-vis-ele-split-card-hover-n:hover img,
+.adv-vis-ele-split-card-hover-n:focus .adv-vis-ele-split-card-hover-i {
+	transform: scale(1.1);
+}
+.adv-vis-ele-split-card-hover-t {
+	position: absolute;
+	inset: 20px;
+	top: auto;
+	display: block;
+	outline: none;
+	cursor: pointer;
+}
+.adv-vis-ele-split-card-hover h3 {
+	font-weight: 800;
+	margin-bottom: 0.2em;
+	position: relative;
+	z-index: 2;
+}
+.adv-vis-ele-split-card-hover p {
+	line-height: 1.4;
+	text-align: justify;
+	margin-top: 0.2em;
+	margin-bottom: 0;
+}
+.adv-vis-ele-split-card-hover h3 .char,
+.adv-vis-ele-split-card-hover p .word {
+	color: #ffffff;
+	display: inline-block;
+	opacity: 0;
+	position: relative;
+	transform: translateY(20px);
+	transition-property: transform, opacity, color;
+	transition-timing-function: cubic-bezier(0.38, 0.26, 0.05, 1.07);
+	transition-duration: 0.75s, 0.75s, calc(0.75s * 2);
+}
+.adv-vis-ele-split-card-hover .adv-vis-ele-split-card-hover-i {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}

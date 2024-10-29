@@ -1,0 +1,34 @@
+.adv-vis-ele-image-flip-ctrl {
+	padding: 0.5em;
+	display: flex;
+	align-items: center;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.adv-vis-ele-image-flip-switch {
+	width: 36px;
+	height: 36px;
+	margin-left: auto;
+	background-image: url('icons/flip-icon.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.adv-vis-ele-image-flip img,
+.adv-vis-ele-image-flip-switch {
+	cursor: pointer;
+}
+.adv-vis-ele-image-flip-c.adv-vis-ele-image-flip-horizontal .adv-vis-ele-image-flip-img {
+	transform: scaleX(-1);
+}
+.adv-vis-ele-image-flip-c.adv-vis-ele-image-flip-vertical .adv-vis-ele-image-flip-img {
+	transform: scaleY(-1);
+}
+.adv-vis-ele-image-flip-c.adv-vis-ele-image-flip-both .adv-vis-ele-image-flip-img {
+	transform: scale(-1, -1);
+}
+@media screen and (max-width: 768px) {
+	.adv-vis-ele-image-flip-ctrl {
+		font-size: 1em;
+	}
+}

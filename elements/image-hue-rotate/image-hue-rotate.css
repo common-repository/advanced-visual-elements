@@ -1,0 +1,12 @@
+.adv-vis-ele-image-hue-rotate-c {
+	background-size: cover;
+	background-blend-mode: hard-light;
+}
+@keyframes adv-vis-ele-image-hue-rotate-animation {
+	from {
+		filter: hue-rotate(0);
+	}
+	to {
+		filter: hue-rotate(360deg);
+	}
+}

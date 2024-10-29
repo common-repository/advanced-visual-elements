@@ -1,0 +1,200 @@
+:root {
+	--hue: 223;
+	--bg: hsl(var(--hue), 10%, 90%);
+	--fg: hsl(var(--hue), 10%, 10%);
+	--primary: hsl(var(--hue), 90%, 55%);
+}
+.adv-vis-ele-credit-card-3d,
+.adv-vis-ele-credit-card-3d-chip {
+	overflow: hidden;
+	position: relative;
+}
+.adv-vis-ele-credit-card-3d,
+.adv-vis-ele-credit-card-3d-chip-texture,
+.adv-vis-ele-credit-card-3d-texture {
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+.adv-vis-ele-credit-card-3d {
+	animation-name: adv-vis-ele-credit-card-3d-rotate;
+	background-color: var(--primary);
+	background-image: radial-gradient(circle at 100% 0%, hsla(0, 0%, 100%, 0.08) 29.5%, hsla(0, 0%, 100%, 0) 30%),
+	radial-gradient(circle at 100% 0%, hsla(0, 0%, 100%, 0.08) 39.5%, hsla(0, 0%, 100%, 0) 40%),
+	radial-gradient(circle at 100% 0%, hsla(0, 0%, 100%, 0.08) 49.5%, hsla(0, 0%, 100%, 0) 50%);
+	border-radius: 0.5em;
+	box-shadow: 0 0 0 hsl(0, 0%, 80%),
+	0 0 0 hsl(0, 0%, 100%),
+	-0.4rem 0 1.5rem 0 hsla(0, 0%, 0%, 0.3);
+	color: hsl(0, 0%, 100%);
+	width: 21.6em;
+	height: 13.6em;
+	transform: translate3d(0, 0, 0);
+}
+.adv-vis-ele-credit-card-3d-info,
+.adv-vis-ele-credit-card-3d-chip-texture,
+.adv-vis-ele-credit-card-3d-texture {
+	position: absolute;
+}
+.adv-vis-ele-credit-card-3d-chip-texture,
+.adv-vis-ele-credit-card-3d-texture {
+	animation-name: adv-vis-ele-credit-card-3d-texture;
+	top: 0;
+	left: 0;
+	width: 200%;
+	height: 100%;
+}
+.adv-vis-ele-credit-card-3d-info {
+	font: 0.75em/1 "DM Sans", sans-serif;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 1.5rem;
+	inset: 0;
+	text-align: left;
+}
+.adv-vis-ele-credit-card-3d-logo,
+.adv-vis-ele-credit-card-3d-number {
+	width: 100%;
+}
+.adv-vis-ele-credit-card-3d-logo {
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-style: italic;
+}
+.adv-vis-ele-credit-card-3d-chip {
+	background-image: linear-gradient(hsl(0, 0%, 70%), hsl(0, 0%, 80%));
+	border-radius: 0.4rem;
+	box-shadow: 0 0 0 0.1rem hsla(0, 0%, 0%, 0.5) inset;
+	width: 2.5rem;
+	height: 2.5rem;
+	transform: translate3d(0, 0, 0);
+}
+.adv-vis-ele-credit-card-3d-chip-lines {
+	width: 100%;
+	height: auto;
+}
+.adv-vis-ele-credit-card-3d-chip-texture {
+	background-image: linear-gradient(-80deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0.6) 48% 52%, hsla(0, 0%, 100%, 0));
+}
+.adv-vis-ele-credit-card-3d-type {
+	align-self: flex-end;
+	margin-left: auto;
+	font-size: 1.3rem;
+	font-style: italic;
+}
+.adv-vis-ele-credit-card-3d-digit-group,
+.adv-vis-ele-credit-card-3d-exp-date,
+.adv-vis-ele-credit-card-3d-name {
+	background: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 85%) 15% 55%, hsl(0, 0%, 70%) 70%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: "Courier Prime", monospace;
+	filter: drop-shadow(0 0.1rem hsla(0, 0%, 0%, 0.3));
+}
+.adv-vis-ele-credit-card-3d-number {
+	font-size: 1.6rem;
+	display: flex;
+	justify-content: space-between;
+}
+.adv-vis-ele-credit-card-3d-valid-thru,
+.adv-vis-ele-credit-card-3d-name {
+	text-transform: uppercase;
+}
+.adv-vis-ele-credit-card-3d-valid-thru,
+.adv-vis-ele-credit-card-3d-exp-date {
+	margin-bottom: 0.5rem;
+	width: 50%;
+}
+.adv-vis-ele-credit-card-3d-valid-thru {
+	font-size: 0.6rem;
+	padding-right: 0.5rem;
+	text-align: right;
+}
+.adv-vis-ele-credit-card-3d-exp-date,
+.adv-vis-ele-credit-card-3d-name {
+	font-size: 1.2rem;
+}
+.adv-vis-ele-credit-card-3d-exp-date {
+	padding-left: 0.5rem;
+}
+.adv-vis-ele-credit-card-3d-name {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 12.5rem;
+}
+.adv-vis-ele-credit-card-3d-vendor,
+.adv-vis-ele-credit-card-3d-vendor:before,
+.adv-vis-ele-credit-card-3d-vendor:after {
+	position: absolute;
+}
+.adv-vis-ele-credit-card-3d-vendor {
+	right: 0.75rem;
+	bottom: 0.75rem;
+	width: 5.1rem;
+	height: 3rem;
+}
+.adv-vis-ele-credit-card-3d-vendor:before,
+.adv-vis-ele-credit-card-3d-vendor:after {
+	border-radius: 50%;
+	content: "";
+	display: block;
+	top: 0;
+	width: 3rem;
+	height: 3rem;
+}
+.adv-vis-ele-credit-card-3d-vendor:before {
+	background-color: #e71d1a;
+	left: 0;
+}
+.adv-vis-ele-credit-card-3d-vendor:after {
+	background-color: #fa5e03;
+	box-shadow: -2.1rem 0 0 #f59d1a inset;
+	right: 0;
+}
+.adv-vis-ele-credit-card-3d-vendor-sr {
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+}
+.adv-vis-ele-credit-card-3d-texture {
+	animation-name: adv-vis-ele-credit-card-3d-texture;
+	background-image: linear-gradient(-80deg, hsla(0, 0%, 100%, 0.3) 25%, hsla(0, 0%, 100%, 0) 45%);
+}
+@keyframes adv-vis-ele-credit-card-3d-rotate {
+	from,
+	to {
+		animation-timing-function: ease-in;
+		box-shadow: 0 0 0 hsl(0, 0%, 80%),
+		0.2rem 0 0 hsl(0, 0%, 100%),
+		-0.4rem 0 1.5rem 0 hsla(0, 0%, 0%, 0.3);
+		transform: rotateY(-10deg);
+	}
+	25%,
+	75% {
+		animation-timing-function: ease-out;
+		box-shadow: 0 0 0 hsl(0, 0%, 80%),
+		0 0 0 hsl(0, 0%, 100%),
+		-0.5rem -0.1rem 2rem 0.3rem hsla(0, 0%, 0%, 0.3);
+		transform: rotateY(0deg);
+	}
+	50% {
+		animation-timing-function: ease-in;
+		box-shadow: -0.2rem 0 0 hsl(0, 0%, 80%),
+		0 0 0 hsl(0, 0%, 100%),
+		-0.6rem -0.2rem 3rem 0.6rem hsla(0, 0%, 0%, 0.3);
+		transform: rotateY(10deg);
+	}
+}
+@keyframes adv-vis-ele-credit-card-3d-texture {
+	from,
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+	50% {
+		transform: translate3d(-50%, 0, 0);
+	}
+}

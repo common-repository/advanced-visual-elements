@@ -1,0 +1,128 @@
+.adv-vis-ele-profile-card-hover-border {
+	height: calc(100% - 10px);
+	width: calc(100% - 10px);
+	background: transparent;
+	transition: border 1s;
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+}
+.adv-vis-ele-profile-card-hover-c {
+	transition: background 0.8s;
+	overflow: hidden;
+	box-shadow: 0 20px 20px -60px #000000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.adv-vis-ele-profile-card-hover-c:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+	opacity: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+	transition: opacity 1s;
+}
+.adv-vis-ele-profile-card-hover-c:hover:after {
+	opacity: 1;
+}
+.adv-vis-ele-profile-card-hover-name,
+.adv-vis-ele-profile-card-hover-text,
+.adv-vis-ele-profile-card-hover-contact {
+	margin: 15px;
+	opacity: 0;
+	transition: opacity 1s;
+	line-height: 1;
+}
+.adv-vis-ele-profile-card-hover-contact {
+	width: calc(100% - 75px);
+	margin-left: 0;
+	text-align: left;
+}
+.adv-vis-ele-profile-card-hover-contact a {
+	word-break: break-all;
+}
+.adv-vis-ele-profile-card-hover-c:hover .adv-vis-ele-profile-card-hover-name,
+.adv-vis-ele-profile-card-hover-c:hover .adv-vis-ele-profile-card-hover-text,
+.adv-vis-ele-profile-card-hover-c:hover .adv-vis-ele-profile-card-hover-contact {
+	opacity: 1;
+}
+.adv-vis-ele-profile-card-hover-c:hover .adv-vis-ele-profile-card-hover-icons > a {
+	opacity: 1;
+}
+.adv-vis-ele-profile-card-hover-name {
+	font-weight: bold;
+}
+.adv-vis-ele-profile-card-hover-text {
+	font-style: italic;
+}
+.adv-vis-ele-profile-card-hover-details {
+	max-height: 50%;
+	overflow: hidden;
+	text-align: left;
+}
+.adv-vis-ele-profile-card-hover-lower {
+	margin-top: auto;
+	display: flex;
+	align-items: flex-end;
+	flex: 1;
+}
+.adv-vis-ele-profile-card-hover-icons {
+	margin: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.adv-vis-ele-profile-card-hover-icons > a {
+	opacity: 0;
+	transition: opacity 1s;
+	margin-top: 5px;
+	text-align: center;
+}
+.adv-vis-ele-profile-card-hover-icons > a > img {
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s;
+}
+.adv-vis-ele-profile-card-hover-icons > a:hover > img {
+	transform: scale(1.15);
+}
+.adv-vis-ele-profile-card-hover-contact > div:last-child {
+	margin-top: 15px;
+}
+@media screen and (max-width: 768px) {
+	.adv-vis-ele-profile-card-hover-icons {
+		margin: 5px;
+	}
+	.adv-vis-ele-profile-card-hover-contact {
+		margin-left: 5px;
+		margin-bottom: 5px;
+	}
+	.adv-vis-ele-profile-card-hover-name,
+	.adv-vis-ele-profile-card-hover-text {
+		margin-left: 5px;
+	}
+	.adv-vis-ele-profile-card-hover-c:after {
+		opacity: 1;
+	}
+	.adv-vis-ele-profile-card-hover-c .adv-vis-ele-profile-card-hover-name,
+	.adv-vis-ele-profile-card-hover-c .adv-vis-ele-profile-card-hover-text,
+	.adv-vis-ele-profile-card-hover-c .adv-vis-ele-profile-card-hover-contact {
+		opacity: 1;
+	}
+	.adv-vis-ele-profile-card-hover-c .adv-vis-ele-profile-card-hover-icons > a {
+		opacity: 1;
+	}
+	.adv-vis-ele-profile-card-hover-icons > a > img {
+		transform: scale(1.15);
+	}
+}

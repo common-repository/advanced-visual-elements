@@ -1,0 +1,19 @@
+.adv-vis-ele-sliced-text-wrapper {
+	display: grid;
+	place-content: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	user-select: none;
+	white-space: nowrap;
+}
+.adv-vis-ele-sliced-text-top {
+	clip-path: polygon(0% 0%, 100% 0%, 100% 45%, 0% 58%);
+}
+.adv-vis-ele-sliced-text-bottom {
+	clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+	color: transparent;
+	transform: translateX(-0.02em);
+}
+.adv-vis-ele-sliced-text-wrapper > div {
+	grid-area: 1/1/-1/-1;
+}

@@ -1,0 +1,9 @@
+.adv-vis-ele-image-magnifier-container {
+	position: relative;
+}
+.adv-vis-ele-image-magnifier-glass {
+	opacity: 0;
+	position: absolute;
+	border-radius: 50%;
+	cursor: none;
+}

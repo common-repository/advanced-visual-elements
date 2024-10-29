@@ -1,0 +1,12 @@
+.adv-vis-ele-image-accordion-c {
+	margin: 0 auto;
+}
+.adv-vis-ele-image-accordion-img {
+	transition: all 0.5s ease-in-out;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.adv-vis-ele-image-accordion-img:hover {
+	cursor: pointer;
+}

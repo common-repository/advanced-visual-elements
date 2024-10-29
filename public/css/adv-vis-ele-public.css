@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+.adv-vis-ele-btn {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	background-color: #007e67;
+	color: #ffffff;
+	padding: 10px 15px;
+	border: none;
+	outline: 1px solid transparent;
+	font-family: 'Public Sans', sans-serif;
+}
+.adv-vis-ele-btn:hover {
+	cursor: pointer;
+	background-color: #ffffff;
+	box-shadow: 0 0 3px #007e67;
+	color: #007e67;
+}
+.adv-vis-ele-shortcode-render-container,
+.adv-vis-ele-shortcode-render-container-inner {
+	position: relative;
+}
+.adv-vis-ele-shortcode-render-admin-commands {
+	display: none;
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+}
+.adv-vis-ele-shortcode-render-admin-commands a {
+	font-size: 1rem;
+}
+.adv-vis-ele-shortcode-draft-notice,
+.adv-vis-ele-shortcode-license-notice {
+	display: none;
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-style: italic;
+	pointer-events: none;
+}
+.adv-vis-ele-shortcode-license-notice {
+	bottom: unset;
+	top: 15px;
+	display: block;
+	z-index: 100;
+}
+.adv-vis-ele-shortcode-render-container:hover .adv-vis-ele-shortcode-render-admin-commands {
+	display: block;
+	z-index: 101;
+}
+.adv-vis-ele-shortcode-render-container:hover .adv-vis-ele-shortcode-draft-notice {
+	display: block;
+	z-index: 100;
+}
+.adv-vis-ele-save-element-first {
+	text-align: center;
+}
+.adv-vis-ele-this-element-needs-install {
+	text-align: center;
+}
+.adv-vis-ele-preview-front-container {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.adv-vis-ele-preview-front-container[data-theme="light"] {
+	background-color: #ffffff;
+}
+.adv-vis-ele-preview-front-container[data-theme="dark"] {
+	background-color: #1d1e22;
+}

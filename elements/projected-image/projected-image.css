@@ -1,0 +1,60 @@
+.adv-vis-ele-projected-image-card {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	perspective: 2500px;
+	margin: auto;
+}
+.adv-vis-ele-projected-image-cover-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.adv-vis-ele-projected-image-wrapper {
+	transition: all 0.5s;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+.adv-vis-ele-projected-image-card:hover .adv-vis-ele-projected-image-wrapper {
+	transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+}
+.adv-vis-ele-projected-image-wrapper:before,
+.adv-vis-ele-projected-image-wrapper:after {
+	content: "";
+	opacity: 0;
+	width: 100%;
+	transition: all 0.5s;
+	position: absolute;
+	left: 0;
+}
+.adv-vis-ele-projected-image-wrapper:before {
+	top: 0;
+	height: 100%;
+}
+.adv-vis-ele-projected-image-wrapper:after {
+	bottom: 0;
+	opacity: 1;
+	background-image: linear-gradient(
+			to bottom,
+			transparent 46%,
+			rgba(12, 13, 19, 0.5) 68%,
+			rgba(12, 13, 19) 97%
+	);
+}
+.adv-vis-ele-projected-image-card:hover .adv-vis-ele-projected-image-wrapper:before,
+.adv-vis-ele-projected-image-wrapper:after {
+	opacity: 1;
+}
+.adv-vis-ele-projected-image-character {
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+	position: absolute;
+	z-index: -1;
+}
+.adv-vis-ele-projected-image-card:hover .adv-vis-ele-projected-image-character {
+	opacity: 1;
+	transform: translate3d(0%, -15%, 100px);
+}

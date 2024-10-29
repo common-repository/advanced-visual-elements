@@ -1,0 +1,46 @@
+.adv-vis-ele-strikethrough-text {
+	position: relative;
+	font-weight: bold;
+	margin: 0 auto;
+	width: max-content;
+}
+.adv-vis-ele-strikethrough-text > .adv-vis-ele-strikethrough-main-text {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	transition: color 0ms 200ms;
+	line-height: normal;
+}
+.adv-vis-ele-strikethrough-text:hover > .adv-vis-ele-strikethrough-main-text {
+	color: transparent;
+	user-select: none;
+	transition-delay: 0ms;
+}
+.adv-vis-ele-strikethrough-text > .adv-vis-ele-strikethrough-main-text::before,
+.adv-vis-ele-strikethrough-text > .adv-vis-ele-strikethrough-main-text::after {
+	position: absolute;
+	content: attr(data-text);
+	height: 50%;
+	overflow: hidden;
+	left: 0;
+	right: 0;
+	transition: color 200ms ease-in-out, transform 200ms ease-in-out;
+	user-select: none;
+}
+.adv-vis-ele-strikethrough-text > .adv-vis-ele-strikethrough-main-text::after {
+	bottom: 0;
+	display: flex;
+	align-items: flex-end;
+}
+.adv-vis-ele-strikethrough-text::before {
+	content: "";
+	position: absolute;
+	width: 110%;
+	left: -5%;
+	transform: scale(0);
+	z-index: 1;
+	transition: transform 200ms ease-in-out;
+}
+.adv-vis-ele-strikethrough-text:hover::before {
+	transform: scale(1);
+}

@@ -1,0 +1,18 @@
+{
+  "title": "AVE Shortcode",
+  "name": "adv-vis-ele/gutenberg-shortcode",
+  "category": "widgets",
+  "icon": "star-half",
+  "editorScript": "file:js/adv-vis-ele-gutenberg-shortcode.js",
+  "supports": {
+	"align": ["left", "center", "right"],
+	"spacing": {
+	  "margin": true,
+	  "padding": true,
+	  "blockGap": true
+	},
+	"typography": {
+	  "fontSize": true
+	}
+  }
+}

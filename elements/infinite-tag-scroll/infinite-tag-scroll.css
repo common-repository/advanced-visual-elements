@@ -1,0 +1,36 @@
+.adv-vis-ele-infinite-tag-scroll-list {
+	display: flex;
+	margin: auto;
+	position: relative;
+	padding: 1rem 0;
+	overflow: hidden;
+}
+.adv-vis-ele-infinite-tag-scroll-slider .adv-vis-ele-infinite-tag-scroll-inner {
+	display: flex;
+	width: fit-content;
+	animation-name: adv-vis-ele-infinite-tag-scroll-loop;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+.adv-vis-ele-infinite-tag-scroll-tag {
+	display: flex;
+	align-items: center;
+	border-radius: 0.4rem;
+	padding: 0.7rem 1rem;
+	user-select: none;
+	font-weight: bold;
+}
+.adv-vis-ele-infinite-tag-scroll-slider-fade {
+	pointer-events: none;
+	position: absolute;
+	inset: 0;
+}
+@keyframes adv-vis-ele-infinite-tag-scroll-loop {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
